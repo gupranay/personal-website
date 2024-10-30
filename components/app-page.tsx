@@ -23,11 +23,6 @@ const PersonalWebsite = () => {
     return () => clearInterval(cursorInterval)
   }, [])
 
-  const currentPage = pathname
-    ? pathname === '/'
-      ? ''
-      : pathname.slice(1)
-    : ''
 
   return (
     <div className="min-h-screen flex flex-col bg-blue-100 dark:bg-gray-900 transition-all duration-500 ease-in-out relative overflow-hidden">

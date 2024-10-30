@@ -42,10 +42,9 @@ const projects: Project[] = [
 ];
 
 const ProjectsPage = () => {
-  const { darkMode, toggleDarkMode } = useTheme();
-  const [showCursor, setShowCursor] = useState(true);
+  const { darkMode } = useTheme();
+  const [ setShowCursor] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const pathname = usePathname();
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
