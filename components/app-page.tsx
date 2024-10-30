@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { FileText, Github, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
