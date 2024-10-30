@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { useTheme } from './ThemeProvider';
 import Header from './Header';
@@ -43,7 +42,7 @@ const activelyBuildingProjects: Project[] = [
 
 const ActivelyBuildingPage = () => {
   const { darkMode } = useTheme();
-  const [ setShowCursor] = useState(true);
+  const [ showCursor, setShowCursor ] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useEffect(() => {

@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import { FileText, Github, Linkedin } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 import dynamic from 'next/dynamic'
 import { useTheme } from './ThemeProvider'
 import Header from './Header'
@@ -12,8 +11,7 @@ import Footer from './Footer'
 
 const PersonalWebsite = () => {
   const { darkMode } = useTheme()
-  const [ setShowCursor] = useState(true)
-  const pathname = usePathname()
+  const [ showCursor, setShowCursor] = useState(true)
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {

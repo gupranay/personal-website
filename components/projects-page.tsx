@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { useTheme } from './ThemeProvider';
 import Header from './Header';
@@ -43,12 +42,12 @@ const projects: Project[] = [
 
 const ProjectsPage = () => {
   const { darkMode } = useTheme();
-  const [ setShowCursor] = useState(true);
+  const [showCursor, setShowCursor] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev);
+      setShowCursor((prev: boolean) => !prev);
     }, 530);
     return () => clearInterval(cursorInterval);
   }, []);
