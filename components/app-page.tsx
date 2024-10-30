@@ -11,8 +11,8 @@ import Header from './Header'
 import Footer from './Footer'
 
 const PersonalWebsite = () => {
-  const { darkMode, toggleDarkMode } = useTheme()
-  const [showCursor, setShowCursor] = useState(true)
+  const { darkMode } = useTheme()
+  const [ setShowCursor] = useState(true)
   const pathname = usePathname()
 
   useEffect(() => {
