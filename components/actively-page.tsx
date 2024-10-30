@@ -42,15 +42,9 @@ const activelyBuildingProjects: Project[] = [
 
 const ActivelyBuildingPage = () => {
   const { darkMode } = useTheme();
-  const [ showCursor, setShowCursor ] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev);
-    }, 530);
-    return () => clearInterval(cursorInterval);
-  }, []);
+  
 
   const openProject = (project: Project) => {
     setSelectedProject(project);

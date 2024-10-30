@@ -11,15 +11,15 @@ import Footer from './Footer'
 
 const PersonalWebsite = () => {
   const { darkMode } = useTheme()
-  const [ showCursor, setShowCursor] = useState(true)
+  // const [ showCursor, setShowCursor] = useState(true)
 
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev)
-    }, 530)
+  // useEffect(() => {
+  //   const cursorInterval = setInterval(() => {
+  //     setShowCursor((prev) => !prev)
+  //   }, 530)
 
-    return () => clearInterval(cursorInterval)
-  }, [])
+  //   return () => clearInterval(cursorInterval)
+  // }, [])
 
 
   return (

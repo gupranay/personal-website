@@ -42,15 +42,15 @@ const projects: Project[] = [
 
 const ProjectsPage = () => {
   const { darkMode } = useTheme();
-  const [showCursor, setShowCursor] = useState(true);
+  // const [showCursor, setShowCursor] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev: boolean) => !prev);
-    }, 530);
-    return () => clearInterval(cursorInterval);
-  }, []);
+  // useEffect(() => {
+  //   const cursorInterval = setInterval(() => {
+  //     setShowCursor((prev: boolean) => !prev);
+  //   }, 530);
+  //   return () => clearInterval(cursorInterval);
+  // }, []);
 
   const openProject = (project: Project) => {
     setSelectedProject(project);
