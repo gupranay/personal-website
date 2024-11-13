@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-// import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Pranay Gupta | Software Engineer",
@@ -29,12 +28,11 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <head />
+        <head>
+          <link rel="icon" href="/PG.png" />
+        </head>
         <body>
-            <ThemeProvider>
-            {children}
-            </ThemeProvider>
-            
+          <ThemeProvider>{children}</ThemeProvider>
         </body>
       </html>
     </>
