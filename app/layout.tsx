@@ -6,9 +6,12 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 export const metadata: Metadata = {
   title: "Pranay Gupta | Software Engineer",
   description: "Pranay Gupta's personal website",
+  icons: {
+    icon: "/PG.png",
+  },
   openGraph: {
     type: "website",
-    url: "http://localhost:3000/",
+    url: "https://www.pranaygupta.dev/",
     title: "Pranay Gupta | Software Engineer",
     description: "Pranay Gupta's personal website",
     siteName: "Pranay Gupta",
@@ -29,7 +32,7 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head>
-          <link rel="icon" href="/PG.png" />
+        <link rel="icon" type="image/png" href="/PG.png" />
         </head>
         <body>
           <ThemeProvider>{children}</ThemeProvider>
