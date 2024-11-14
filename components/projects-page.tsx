@@ -30,7 +30,7 @@ const projects: Project[] = [
     description: 'A recruitment platform using Next.js.',
     details: 'Enabled organizations to manage recruitment cycles and applicants with Google OAuth integration and CSV uploads. Supported by College of Engineering and Ross Business School.',
     href: 'https://www.recruitify.tech',
-    github: 'https://github.com/gupranay/recruiting-platform',
+    github: 'https://github.com/gupranay/recruitment_v3',
     tech1: 'Next.js',
     tech2: 'Supabase',
     tech3: 'Google OAuth',
